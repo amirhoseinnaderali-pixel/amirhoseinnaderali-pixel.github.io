@@ -6,7 +6,7 @@
 <meta name="description" content="Amirhossein Naderali — LLM, reasoning and efficient AI research.">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body><div class="progress" id="progress"></div>
 <header class="nav">
   <a class="brand" href="#top">AN<span>.</span></a>
   <nav>
@@ -15,12 +15,12 @@
   <button id="theme" aria-label="Toggle theme">◐</button>
 </header>
 <main id="top">
-<section class="hero">
+<section class="hero"><div class="hero-glow" aria-hidden="true"></div>
   <div>
     <p class="eyebrow">COMPUTER ENGINEERING · LLM RESEARCH</p>
     <h1>Building better reasoning<br><em>under real compute constraints.</em></h1>
     <p class="lede">I study efficient reasoning, multi-model collaboration, inference-time computation, and training strategies for large language models.</p>
-    <div class="actions"><a class="btn" href="#research">Explore research ↗</a><a class="plain" href="#cv">Read CV</a></div>
+    <div class="actions"><a class="btn" href="#research">Explore research <span>↗</span></a><a class="plain" href="#cv">Read CV</a></div><div class="hero-meta"><span>OPEN TO MSc RESEARCH</span><span>LLMs · REASONING · EFFICIENCY</span></div>
   </div>
   <div class="orbital" aria-hidden="true"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="core">LLM</div><div class="dot d1">R</div><div class="dot d2">C</div><div class="dot d3">T</div><div class="dot d4">V</div></div>
 </section>
@@ -42,5 +42,5 @@
 <section class="section" id="contact"><div class="contact"><div><div class="label">06 / CONTACT</div><h2>Interested in<br>research collaboration?</h2></div><div><p>For MSc supervision, research discussion, or collaboration, feel free to reach out.</p><a class="email" href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com ↗</a><div class="links"><a href="https://github.com/amirhoseinnaderali-pixel" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></div></div></div></section>
 </main>
 <footer><span>© 2026 Amirhossein Naderali</span><span>Built for research, not noise.</span></footer>
-<script>document.getElementById('theme').onclick=()=>document.body.classList.toggle('light');</script>
+<script>const theme=document.getElementById("theme");theme.onclick=()=>document.body.classList.toggle("light");const progress=document.getElementById("progress");window.addEventListener("scroll",()=>{const h=document.documentElement.scrollHeight-window.innerHeight;progress.style.width=(h>0?(scrollY/h)*100:0)+"%"});</script>
 </body></html>
