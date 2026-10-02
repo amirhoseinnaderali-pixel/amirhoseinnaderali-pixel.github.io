@@ -24,7 +24,7 @@
   </div>
   <div class="orbital" aria-hidden="true"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="core">LLM</div><div class="dot d1">R</div><div class="dot d2">C</div><div class="dot d3">T</div><div class="dot d4">V</div></div>
 </section>
-<section class="section" id="about"><div class="label">01 / ABOUT</div><div class="two-col"><h2>Research-minded<br>engineer.</h2><div class="copy"><p>I am a Computer Engineering graduate from the University of Tabriz, focused on <b>LLM reasoning</b>, <b>efficient training</b>, <b>preference optimization</b>, and <b>agentic systems</b>.</p><p>I build research-oriented systems around efficient LLM training, distributed fine-tuning, reasoning under compute constraints, retrieval, and multi-agent workflows.</p><div class="links"><a href="https://github.com/amirhoseinnaderali-pixel" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></div></section>
+<section class="section" id="about"><div class="label">01 / ABOUT</div><div class="two-col"><h2>Research-minded<br>engineer.</h2><div class="copy"><p>I am a Computer Engineering graduate focused on <b>LLM reasoning</b>, <b>efficient training</b>, <b>preference optimization</b>, and <b>agentic systems</b>.</p><p>I build research-oriented systems around efficient LLM training, distributed fine-tuning, reasoning under compute constraints, retrieval, and multi-agent workflows.</p><div class="links"><a href="https://github.com/amirhoseinnaderali-pixel" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></div></section>
 <section class="section" id="research"><div class="section-head"><div><div class="label">02 / RESEARCH</div><h2>Current studies</h2></div><p>Small questions, controlled experiments, measurable outcomes.</p></div>
 <div class="cards">
 <article class="card featured"><span>01 · EMPIRICAL STUDY</span><h3>Graph-Structured Reasoning</h3><p>Does the structure of reasoning trajectories contain useful signal beyond consensus and similarity-based selection?</p><div class="tags"><i>Reasoning</i><i>Graphs</i><i>Verification</i></div><a href="https://github.com/amirhoseinnaderali-pixel/graph-structured-reasoning-research" target="_blank" rel="noreferrer">Read study ↗</a></article>
@@ -32,14 +32,83 @@
 <article class="card"><span>03 · COMPUTE ALLOCATION</span><h3>Training vs. Inference Compute</h3><p>How should a fixed compute envelope be divided between training and inference-time reasoning?</p><div class="tags"><i>Compute</i><i>Training</i><i>Test-time</i></div><a href="https://github.com/amirhoseinnaderali-pixel/training-vs-inference-compute-research" target="_blank" rel="noreferrer">Read study ↗</a></article>
 <article class="card"><span>04 · RESEARCH FRAMEWORK</span><h3>Efficient Reasoning</h3><p>A reproducible framework for studying reasoning quality under explicit compute and evaluation constraints.</p><div class="tags"><i>Efficiency</i><i>Reproducibility</i><i>Ablations</i></div><a href="https://github.com/amirhoseinnaderali-pixel/efficient-reasoning-research" target="_blank" rel="noreferrer">Explore framework ↗</a></article>
 </div></section>
-<section class="section" id="projects"><div class="two-col"><div><div class="label">03 / PROJECTS</div><h2>From research idea<br>to working system.</h2></div><div class="rows">
+<section class="section" id="journey">
+  <div class="section-head">
+    <div><div class="label">03 / RESEARCH JOURNEY</div><h2>How the questions evolved.</h2></div>
+    <p>Not a project list. A map of questions, experiments, and the next question each study opens.</p>
+  </div>
+  <div class="tree-intro">
+    <div class="tree-root">
+      <span>RESEARCH CORE</span>
+      <strong>How can LLM reasoning become more reliable under real compute constraints?</strong>
+      <div class="tree-tags"><i>Controlled budgets</i><i>Objective evaluation</i><i>Ablations</i><i>Reproducibility</i></div>
+    </div>
+  </div>
+  <div class="research-tree">
+    <div class="tree-branch">
+      <div class="branch-title"><span>01</span><strong>Test-time reasoning</strong><em>What actually makes extra inference compute useful?</em></div>
+      <div class="tree-node">
+        <div class="node-top"><span>STUDY</span><span>01</span></div>
+        <h3>Efficient Reasoning</h3>
+        <p>Compare reasoning strategies under one hard inference-time budget, separating objective feedback from model self-assessment.</p>
+        <div class="node-bottom"><span>Question opened</span><b>What if reasoning becomes multi-agent and iterative?</b></div>
+        <a href="https://github.com/amirhoseinnaderali-pixel/efficient-reasoning-research" target="_blank" rel="noreferrer">Explore study ↗</a>
+      </div>
+      <div class="tree-connector"></div>
+      <div class="tree-node">
+        <div class="node-top"><span>STUDY</span><span>02</span></div>
+        <h3>VMAR-PS</h3>
+        <p>Combine multi-agent generation, ReAct-style iteration, execution feedback, repair, and candidate selection for program synthesis.</p>
+        <div class="node-bottom"><span>Question opened</span><b>How much reliability is gained from verified test-time reasoning?</b></div>
+        <a href="https://github.com/amirhoseinnaderali-pixel/multi-agent-react-sandbox" target="_blank" rel="noreferrer">Explore study ↗</a>
+      </div>
+      <div class="tree-connector"></div>
+      <div class="tree-node accent-node">
+        <div class="node-top"><span>STUDY</span><span>03</span></div>
+        <h3>CTTR-VPS</h3>
+        <p>Push verification-driven inference further: planning diversity, candidate pools, objective selection, and execution-based debugging.</p>
+        <div class="node-bottom"><span>Question opened</span><b>Where should a fixed compute budget actually be spent?</b></div>
+        <a href="https://github.com/amirhoseinnaderali-pixel/Reasoning-Is-All-You-Need" target="_blank" rel="noreferrer">Explore study ↗</a>
+      </div>
+    </div>
+    <div class="tree-branch">
+      <div class="branch-title"><span>02</span><strong>Compute allocation</strong><em>Should compute improve the model or the reasoning process?</em></div>
+      <div class="tree-node">
+        <div class="node-top"><span>STUDY</span><span>04</span></div>
+        <h3>Training vs. Inference Compute</h3>
+        <p>Hold total compute fixed and vary how much goes into training versus inference-time candidate generation.</p>
+        <div class="node-bottom"><span>Question opened</span><b>Can smarter collaboration use the same inference budget better?</b></div>
+        <a href="https://github.com/amirhoseinnaderali-pixel/training-vs-inference-compute-research" target="_blank" rel="noreferrer">Explore study ↗</a>
+      </div>
+    </div>
+    <div class="tree-branch">
+      <div class="branch-title"><span>03</span><strong>Collaboration & selection</strong><em>Is diversity itself a source of reasoning signal?</em></div>
+      <div class="tree-node">
+        <div class="node-top"><span>STUDY</span><span>05</span></div>
+        <h3>Multi-Model Reasoning</h3>
+        <p>Test heterogeneous model collaboration under a shared budget with hidden objective evaluation and explicit information flow.</p>
+        <div class="node-bottom"><span>Question opened</span><b>Can the relationships between reasoning traces become signal?</b></div>
+        <a href="https://github.com/amirhoseinnaderali-pixel/multi-model-reasoning-research" target="_blank" rel="noreferrer">Explore study ↗</a>
+      </div>
+      <div class="tree-connector"></div>
+      <div class="tree-node">
+        <div class="node-top"><span>FRONTIER</span><span>06</span></div>
+        <h3>Graph-Structured Reasoning</h3>
+        <p>Represent reasoning trajectories as a graph and test whether structure adds information beyond consensus and similarity-based selection.</p>
+        <div class="node-bottom"><span>Current frontier</span><b>From “more candidates” to “better structure over candidates.”</b></div>
+        <a href="https://github.com/amirhoseinnaderali-pixel/graph-structured-reasoning-research" target="_blank" rel="noreferrer">Explore study ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="projects"><div class="two-col"><div><div class="label">04 / PROJECTS</div><h2>From research idea<br>to working system.</h2></div><div class="rows">
 <a class="row" href="https://github.com/amirhoseinnaderali-pixel/Reasoning-Is-All-You-Need" target="_blank" rel="noreferrer"><span>01</span><strong>Reasoning-Is-All-You-Need</strong><b>↗</b></a>
 <a class="row" href="https://github.com/amirhoseinnaderali-pixel/multi-agent-react-sandbox" target="_blank" rel="noreferrer"><span>02</span><strong>Multi-Agent ReAct Sandbox</strong><b>↗</b></a>
 <a class="row" href="https://github.com/amirhoseinnaderali-pixel" target="_blank" rel="noreferrer"><span>03</span><strong>LLM Training & Fine-Tuning Systems</strong><b>↗</b></a>
 </div></div></section>
-<section class="section" id="cv"><div class="cv"><div><div class="label">04 / CV</div><h2>Education, research<br>and engineering.</h2><p>B.Sc. Computer Engineering · 2021–2025<br>GPA: 17.17/20 · Iran<br>Research: efficient LLM training, preference optimization, reasoning, NLP, IR, and agentic AI.</p></div><div class="facts"><div><small>Degree</small><strong>B.Sc.</strong></div><div><small>GPA</small><strong>A</strong></div><div><small>Focus</small><strong>LLM / AI</strong></div><a class="btn light" href="cv.pdf">Download CV ↓</a></div></div><p class="note">Put your final PDF in this folder with the filename <code>cv.pdf</code>.</p></section>
-<section class="section"><div class="section-head"><div><div class="label">05 / NOTES</div><h2>Research notes</h2></div><p>A place for ideas, experiments, and technical write-ups.</p></div><div class="notes"><article><small>NOTE / 001</small><h3>When does more test-time compute actually help?</h3><p>Budget allocation, candidate coverage, and verification.</p></article><article><small>NOTE / 002</small><h3>Small models as search engines for reasoning</h3><p>Generate paths cheaply, then spend compute where uncertainty remains.</p></article><article><small>NOTE / 003</small><h3>What makes an LLM experiment convincing?</h3><p>Controls, hidden evaluation, ablations, and honest uncertainty.</p></article></div></section>
-<section class="section" id="contact"><div class="contact"><div><div class="label">06 / CONTACT</div><h2>Interested in<br>research collaboration?</h2></div><div><p>For MSc supervision, research discussion, or collaboration, feel free to reach out.</p><a class="email" href="mailto:amirhoseinnaderali@gmail.com">amirhoseinnaderali@gmail.com ↗</a><div class="links"><a href="https://github.com/amirhoseinnaderali-pixel" target="_blank" rel="noreferrer">GitHub</a><a href="https://ir.linkedin.com/in/amir-naderali-7aa75439a" target="_blank" rel="noreferrer">LinkedIn</a></div></div></div></section>
+<section class="section" id="cv"><div class="cv"><div><div class="label">05 / CV</div><h2>Education, research<br>and engineering.</h2><p>B.Sc. Computer Engineering · 2021–2025<br>GPA: A · Iran<br>Research: efficient LLM training, preference optimization, reasoning, NLP, IR, and agentic AI.</p></div><div class="facts"><div><small>Degree</small><strong>B.Sc.</strong></div><div><small>GPA</small><strong>A</strong></div><div><small>Focus</small><strong>LLM / AI</strong></div><a class="btn light" href="cv.pdf">Download CV ↓</a></div></div><p class="note">Put your final PDF in this folder with the filename <code>cv.pdf</code>.</p></section>
+<section class="section"><div class="section-head"><div><div class="label">06 / NOTES</div><h2>Research notes</h2></div><p>A place for ideas, experiments, and technical write-ups.</p></div><div class="notes"><article><small>NOTE / 001</small><h3>When does more test-time compute actually help?</h3><p>Budget allocation, candidate coverage, and verification.</p></article><article><small>NOTE / 002</small><h3>Small models as search engines for reasoning</h3><p>Generate paths cheaply, then spend compute where uncertainty remains.</p></article><article><small>NOTE / 003</small><h3>What makes an LLM experiment convincing?</h3><p>Controls, hidden evaluation, ablations, and honest uncertainty.</p></article></div></section>
+<section class="section" id="contact"><div class="contact"><div><div class="label">07 / CONTACT</div><h2>Interested in<br>research collaboration?</h2></div><div><p>For MSc supervision, research discussion, or collaboration, feel free to reach out.</p><a class="email" href="mailto:amirhoseinnaderali@gmail.com">amirhoseinnaderali@gmail.com ↗</a><div class="links"><a href="https://github.com/amirhoseinnaderali-pixel" target="_blank" rel="noreferrer">GitHub</a><a href="https://ir.linkedin.com/in/amir-naderali-7aa75439a" target="_blank" rel="noreferrer">LinkedIn</a></div></div></div></section>
 </main>
 <footer><span>© 2026 Amirhossein Naderali</span><span>Built for research, not noise.</span></footer>
 <script>const theme=document.getElementById("theme");theme.onclick=()=>document.body.classList.toggle("light");const progress=document.getElementById("progress");window.addEventListener("scroll",()=>{const h=document.documentElement.scrollHeight-window.innerHeight;progress.style.width=(h>0?(scrollY/h)*100:0)+"%"});</script>
