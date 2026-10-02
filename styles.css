@@ -75,3 +75,33 @@ body.light .accent-node{border-color:rgba(88,112,0,.28);background:linear-gradie
 @keyframes dotPulse{0%,100%{box-shadow:0 0 0 0 rgba(216,255,112,0)}50%{box-shadow:0 0 0 8px rgba(216,255,112,.055)}}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.card,.tree-node,.tree-root,.cv,.contact,.section{opacity:1;transform:none}}
 @media(max-width:560px){.hero-stats{gap:7px}.hero-stats>div{min-width:0;flex:1;padding:9px 10px}.signal-line{align-items:flex-start;gap:8px}.signal-line b{white-space:normal}.orbit-grid{width:300px;height:300px}.oc1{top:18px}.oc2{bottom:22px;right:8px}.oc3{left:0}}
+
+/* Tree of Knowledge visual identity */
+:root{--tree-glow:rgba(216,255,112,.18);--tree-line:rgba(216,255,112,.58)}
+.hero{min-height:760px}
+.hero-philosophy{max-width:610px;color:var(--text);font-size:14px;line-height:1.7;border-left:1px solid var(--accent);padding-left:15px;margin-top:22px;opacity:.82}
+.tree-hero{height:610px;position:relative;display:grid;place-items:center;isolation:isolate}
+.tree-hero:before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:radial-gradient(circle,rgba(216,255,112,.09),transparent 67%);filter:blur(10px);z-index:-2}
+.light-orb{position:absolute;top:18px;left:50%;width:84px;height:84px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,#fff 0 4%,rgba(216,255,112,.75) 10%,rgba(216,255,112,.16) 36%,transparent 70%);filter:blur(.2px);animation:lightBreath 5s ease-in-out infinite}
+.light-ray{position:absolute;top:52px;left:50%;width:1px;height:330px;background:linear-gradient(rgba(216,255,112,.3),transparent);transform-origin:top;z-index:-1;opacity:.45}
+.ray-a{transform:rotate(-12deg)}.ray-b{transform:rotate(13deg)}
+.tree-hero-label{position:absolute;top:6px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:.2em;color:var(--muted);white-space:nowrap}
+.hero-tree-svg{width:min(520px,100%);height:560px;color:var(--text);overflow:visible;filter:drop-shadow(0 18px 40px rgba(0,0,0,.22))}
+.tree-canopy{animation:treeSway 9s ease-in-out infinite;transform-origin:260px 438px}
+.tree-nodes circle,.tree-leaves circle{fill:var(--accent);opacity:.72}
+.tree-leaves circle{opacity:.28;animation:leafPulse 4s ease-in-out infinite}
+.tree-leaves circle:nth-child(2n){animation-delay:1.2s}.tree-leaves circle:nth-child(3n){animation-delay:2.1s}
+.tree-glow circle{fill:var(--accent);filter:blur(2px);opacity:.6;animation:nodeGlow 3.8s ease-in-out infinite}
+.tree-axis{position:absolute;font-size:9px;letter-spacing:.18em;color:var(--muted);display:flex;align-items:center;gap:8px}
+.tree-axis span{letter-spacing:.08em;text-transform:none;font-size:10px;opacity:.65}
+.axis-root{bottom:28px;left:14%}.axis-branch{top:47%;right:2%}.axis-leaf{top:31%;left:4%}
+.tree-motto{position:absolute;right:0;bottom:34px;width:210px;font-size:12px;line-height:1.55;color:var(--muted);text-align:right}
+.tree-motto strong{color:var(--text);font-weight:600}
+.label-light{color:var(--accent)}
+@keyframes lightBreath{0%,100%{transform:translateX(-50%) scale(.92);opacity:.75}50%{transform:translateX(-50%) scale(1.08);opacity:1}}
+@keyframes treeSway{0%,100%{transform:rotate(-.35deg)}50%{transform:rotate(.35deg)}}
+@keyframes leafPulse{0%,100%{opacity:.18}50%{opacity:.4}}
+@keyframes nodeGlow{0%,100%{opacity:.35}50%{opacity:.85}}
+@media(max-width:900px){.hero{min-height:auto}.tree-hero{height:500px;margin-top:-10px}.hero-tree-svg{height:460px}.tree-motto{right:2%;bottom:8px}.axis-root{left:5%}.axis-branch{right:0}.axis-leaf{left:0}}
+@media(max-width:560px){.hero-philosophy{font-size:13px}.tree-hero{height:430px}.hero-tree-svg{height:400px}.light-orb{top:5px;width:65px;height:65px}.tree-axis{font-size:8px}.tree-axis span{font-size:9px}.axis-root{bottom:4px;left:0}.axis-branch{top:44%;right:-2px}.axis-leaf{top:27%;left:-2px}.tree-motto{position:relative;right:auto;bottom:auto;width:100%;text-align:left;grid-column:1;align-self:end;margin-bottom:-2px;padding:0 4px}.tree-hero{display:flex;flex-direction:column;justify-content:center;gap:0}.hero-tree-svg{flex:0 0 auto}}
+@media (prefers-reduced-motion:reduce){.light-orb,.tree-canopy,.tree-leaves circle,.tree-glow circle{animation:none!important}}
